@@ -1,0 +1,31 @@
+#%RAML 0.8
+title: Test API
+baseUri: http://localhost:8081/api
+
+/repository/{repository}:
+  uriParameters: 
+    repository:
+      example: test-repo
+  get: 
+    queryParameters:
+      url: 
+        example: https://github.com/jorgegarciamule/test-repo.git
+  delete:
+
+  /file:
+    get:
+      queryParameters:
+        filename:
+        path:
+      responses: 
+        200:
+          body: 
+    post:
+      queryParameters:
+        filename:
+        path:
+      body:
+      responses: 
+        200:
+          body:  
+    
